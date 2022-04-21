@@ -28,12 +28,13 @@
                 <a href="#galeria">Galeria</a>
                 <a href="#contactenos">Contáctenos</a>
             </nav>
+            <a href="#" class="ham"><i class="fa-solid fa-bars"></i></a>
         </div>
     </header>
     <main>
         <section id="inicio">
             <img src="img/bannerprincipal.jpg" alt="imagen de coca cola">
-            <div class="bloque-inicio">
+            <div class="container bloque-inicio">
                 <h1>Bienvenidos a Coca Cola
                 </h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -55,8 +56,8 @@
         </section>
         <section id="servicios" class="seccion">
             <div class="container">
-                <div class="row">
-                    <div class="columna columna-33">
+                <div class="row ">
+                    <div class="columna columna-33 columna-mobile-100">
                         <div class="bloque-servicio">
                             <div class="bloque-img-servicio cuadrado-perfecto">
                                 <img src="img/servicio1.jpg" alt="imagen de servicio 1">
@@ -71,7 +72,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="columna columna-33">
+                    <div class="columna columna-33 columna-mobile-100">
                         <div class="bloque-servicio">
                             <div class="bloque-img-servicio cuadrado-perfecto">
                                 <img src="img/servicio2.jpg" alt="imagen de servicio 2">
@@ -86,7 +87,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="columna columna-33">
+                    <div class="columna columna-33 columna-mobile-100">
                         <div class="bloque-servicio">
                             <div class="bloque-img-servicio cuadrado-perfecto">
                                 <img src="img/servicio3.jpg" alt="imagen de servicio 3">
@@ -107,42 +108,42 @@
         <section id="galeria">
             <div class="contaier-fluid">
                 <div class="row">
-                    <div class="columna-33">
+                    <div class="columna-33 columna-mobile-50">
                         <div class="cuadrado-perfecto">
                             <img src="img/servicio1.jpg" alt="imagen del servicio 1">
                             <h4>Imagen1
                             </h4>
                         </div>
                     </div>
-                    <div class="columna-33">
+                    <div class="columna-33 columna-mobile-50">
                         <div class="cuadrado-perfecto">
                             <img src="img/servicio2.jpg" alt="imagen del servicio 2">
                             <h4>Imagen2
                             </h4>
                         </div>
                     </div>
-                    <div class="columna-33">
+                    <div class="columna-33 columna-mobile-50">
                         <div class="cuadrado-perfecto">
                             <img src="img/servicio3.jpg" alt="imagen del servicio 3">
                             <h4>Imagen3
                             </h4>
                         </div>
                     </div>
-                    <div class="columna-33">
+                    <div class="columna-33 columna-mobile-50">
                         <div class="cuadrado-perfecto">
                             <img src="img/servicio1.jpg" alt="imagen del servicio 1">
                             <h4>Imagen4
                             </h4>
                         </div>
                     </div>
-                    <div class="columna-33">
+                    <div class="columna-33 columna-mobile-50">
                         <div class="cuadrado-perfecto">
                             <img src="img/servicio2.jpg" alt="imagen del servicio 2">
                             <h4>Imagen5
                             </h4>
                         </div>
                     </div>
-                    <div class="columna-33">
+                    <div class="columna-33 columna-mobile-50">
                         <div class="cuadrado-perfecto">
                             <img src="img/servicio3.jpg" alt="imagen del servicio 3">
                             <h4>Imagen6
@@ -156,9 +157,9 @@
             <iframe src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Tepic+(Nayarit,%20M%C3%A9xico)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" 
             width="520" height="400" frameborder="0">
             </iframe>
-            <div class="container">
+            <div class="container sinpadding-mobile">
                 <div class="row">
-                    <div class="columna columna-41 empujar-58">
+                    <div class="columna columna-41 columna-mobile-100 empujar-58 empujar-mobile-0 sinpadding-mobile">
                         <form action="" method="post">
                             <div class="form-block">
                                 <input type="text" name="nombre" placeholder="Nombre" class="form-control">
@@ -178,16 +179,16 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="seccion">
         <div class="container">
             <div class="row">
-                <div class="columna columna-25">
+                <div class="columna columna-25 columna-mobile-100">
                     <img src="img/logo-blanco.png" alt="logo blanco" class="logo-footer">
                     <p>Nunc volutpat turpis ac ornare tincidunt. Nam interdum finibus 
                         auctor. Morbi ultricies mollis est, ac semper metus semper in.
                     </p>
                 </div>
-                <div class="columna columna-25">
+                <div class="columna columna-25 columna-mobile-100">
                     <h3>
                         Temas realcionados
                     </h3>
@@ -197,7 +198,7 @@
                         <li><a href="#">Tema 3</a></li>
                     </ul>
                 </div>
-                <div class="columna columna-25">
+                <div class="columna columna-25 columna-mobile-100">
                     <h3>
                         Datos de contacto
                     </h3>
@@ -207,24 +208,24 @@
                         <li>Calle fulana de tal numero tal<br>Nayarit México</li>
                     </ul>
                 </div>
-                <div class="columna columna-25">
+                <div class="columna columna-25 columna-mobile-100">
                     <h3>
                         Redes sociales
                     </h3>
-                    <ul>
+                    <ul class="redes">
                         <li>
                             <a href="#">
-                                <i></i>
+                                <i class="fa-brands fa-facebook-square"></i>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <i></i>
+                                <i class="fa-brands fa-twitter-square"></i>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <i></i>
+                                <i class="fa-brands fa-git-square"></i>
                             </a>
                         </li>
                     </ul>
@@ -235,5 +236,11 @@
             &copy; Derechos Reservados - 2020
         </div>
     </footer>
+    <script src="Js/jquery.js">
+
+    </script>
+    <script src="Js/funciones.js">
+        
+    </script>
 </body>
 </html>

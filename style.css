@@ -24,11 +24,48 @@ header .container .logo{
 }
 header .container a{
     color: red;
-    text-decoration: none;
     margin: 0 15px;
+}
+header .container .ham{
+    display: none;
 }
 a{
     display: inline-block;
+    text-decoration: none;
+}
+footer.seccion{
+    background-color: black;
+    color: white;
+    padding-bottom: 0;
+}
+footer .barra-footer{
+    background-color: grey;
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+footer ul{
+    padding-left: 0;
+    list-style: none;
+}
+footer .redes{
+    font-size: 30px;
+    display: flex;
+    margin: 0;
+}
+footer .redes a{
+    margin: 0 7.5px;
+}
+footer ul li{
+    margin-bottom: 10px;
+}
+footer .logo-footer{
+    width: 100%;
+}
+footer a{
+    color: white;
 }
 .boton{
     text-align: center;
@@ -101,7 +138,11 @@ a{
 }
 .columna-33{
     width: 33.33%;
-}.columna-41{
+}
+.columna-25{
+    width: 25%;
+}
+.columna-41{
     width: 41.66%;
 }
 .columna-50{
@@ -214,4 +255,88 @@ a{
 }
 #contactenos form .form-block.bloque-ultimo{
   margin-bottom: 0;
+}
+
+@media(max-width:767px){
+    body{
+        font-size: 15px;
+    }
+    header .container nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: 15px;
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.4s ease;
+        transform: translateX(100%);
+    }
+    header  .container nav a{
+        font-size: 30;
+        margin: 15px 0;
+    }
+    header .container .ham{
+        display: block;
+        font-size: 40px;
+        color: red;
+    }
+    form .boton.boton-negro{
+        width: 100%;
+    }
+    footer{
+        text-align: center;
+    }
+    footer .logo-footer {
+        width: 50%;
+     }
+    footer .redes {
+        font-size: 30px;
+        justify-content: center;
+    }
+    .columna-mobile-100{
+        width: 100%;
+    }
+    .columna-mobile-50{
+        width: 50%;
+    }
+    .empujar-mobile-0{
+        margin-left: 0;
+    }
+    .sinpadding-mobile{
+      padding: 0;  
+    }
+    .container{
+        width: 100%;
+    }
+    #inicio{
+        height: 100vh;
+    }
+    #inicio .bloque-inicio{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    #inicio img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    #servicios .bloque-servicio{
+        margin-bottom: 15px;
+      }
+    #contactenos{
+        padding: 0;
+    }
+    #contactenos iframe{
+        position: relative;
+        height: 50vh;
+    }
 }
